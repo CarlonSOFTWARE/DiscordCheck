@@ -31,7 +31,7 @@ python dc.py
 
 ## Lisans
 Bu proje MIT Lisansı altında lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasına göz atın.
-
+---
 ## İletişim
 Proje ile ilgili geri bildirimler veya sorularınız için bana [e-posta](mailto:carlon@valeska.com.tr) gönderebilirsiniz.
 
