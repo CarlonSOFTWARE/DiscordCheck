@@ -43,14 +43,14 @@ def check_tokens_from_file():
         with open(file_path, "r") as file:
             tokens = file.readlines()
             for token in tokens:
-                token = token.strip()  # Satır sonundaki boşlukları kaldırın
+                token = token.strip()  
                 check_token(token)
     except FileNotFoundError:
         print("Dosya bulunamadı!")
 
 def main():
     os.system("clear")
-    valid_tokens = []  # Geçerli tokenleri tutacak bir liste oluşturun
+    valid_tokens = []  
     print_banner()
     
     while True:
@@ -79,7 +79,7 @@ def main():
                 random_token = generate_random_token()
                 try:
                     check_token(random_token)
-                    valid_tokens.append(random_token)  # Geçerli tokeni listeye ekleyin
+                    valid_tokens.append(random_token)  
                 except Exception as e:
                     print(f"Hata oluştu: {e}")
             input("\nDevam etmek için herhangi bir tuşa basın...")
@@ -88,7 +88,7 @@ def main():
         elif choice == "4":
             with open("tokenler.txt", "w") as file:
                 for token in valid_tokens:
-                    file.write(token + "\n")  # Geçerli tokenleri dosyaya yazın
+                    file.write(token + "\n")  
             print("\nGeçerli tokenler kaydedildi!.")
             break
         else:
